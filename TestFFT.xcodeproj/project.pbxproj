@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9020ED51A471C50007DE22C /* libfftw3_double.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9020ED31A471C50007DE22C /* libfftw3_double.a */; };
+		D9020ED61A471C50007DE22C /* libfftw3_float.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9020ED41A471C50007DE22C /* libfftw3_float.a */; };
+		D9020ED71A471CA3007DE22C /* libfftw3_double.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9020ED31A471C50007DE22C /* libfftw3_double.a */; };
+		D9020ED81A471CA5007DE22C /* libfftw3_float.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9020ED41A471C50007DE22C /* libfftw3_float.a */; };
+		D94201AB1A2313430099FEE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94201AA1A2313430099FEE3 /* main.m */; };
+		D94201AE1A2313430099FEE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D94201AD1A2313430099FEE3 /* AppDelegate.m */; };
+		D94201B11A2313430099FEE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94201B01A2313430099FEE3 /* ViewController.m */; };
+		D94201B41A2313430099FEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94201B21A2313430099FEE3 /* Main.storyboard */; };
+		D94201B61A2313430099FEE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94201B51A2313430099FEE3 /* Images.xcassets */; };
+		D94201B91A2313430099FEE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94201B71A2313430099FEE3 /* LaunchScreen.xib */; };
+		D94201D81A23136D0099FEE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D94201D71A23136D0099FEE3 /* AppDelegate.m */; };
+		D94201DA1A23136D0099FEE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94201D91A23136D0099FEE3 /* main.m */; };
+		D94201DC1A23136D0099FEE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94201DB1A23136D0099FEE3 /* Images.xcassets */; };
+		D94201DF1A23136D0099FEE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94201DD1A23136D0099FEE3 /* MainMenu.xib */; };
+		D97279711A2C2621003A235C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97279701A2C2621003A235C /* Accelerate.framework */; };
+		D97279731A2C2626003A235C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97279721A2C2626003A235C /* Accelerate.framework */; };
+		D972797E1A2C2755003A235C /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = D972797C1A2C2755003A235C /* kiss_fft.c */; };
+		D972797F1A2C2755003A235C /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = D972797C1A2C2755003A235C /* kiss_fft.c */; };
+		D972798A1A2C277D003A235C /* NE10_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279811A2C277D003A235C /* NE10_fft.c */; };
+		D972798B1A2C277D003A235C /* NE10_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279811A2C277D003A235C /* NE10_fft.c */; };
+		D972798C1A2C277D003A235C /* NE10_fft_float32.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279831A2C277D003A235C /* NE10_fft_float32.c */; };
+		D972798D1A2C277D003A235C /* NE10_fft_float32.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279831A2C277D003A235C /* NE10_fft_float32.c */; };
+		D97279931A2C277D003A235C /* NE10_fft_float32.neonintrinsic.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279861A2C277D003A235C /* NE10_fft_float32.neonintrinsic.c */; };
+		D97279961A2C2818003A235C /* NE10_fft_float32.neonintrinsic.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279861A2C277D003A235C /* NE10_fft_float32.neonintrinsic.c */; };
+		D97279AC1A2C28B8003A235C /* ckfft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279981A2C28B8003A235C /* ckfft.cpp */; };
+		D97279AD1A2C28B8003A235C /* ckfft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279981A2C28B8003A235C /* ckfft.cpp */; };
+		D97279AE1A2C28B8003A235C /* context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D972799A1A2C28B8003A235C /* context.cpp */; };
+		D97279AF1A2C28B8003A235C /* context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D972799A1A2C28B8003A235C /* context.cpp */; };
+		D97279B01A2C28B8003A235C /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D972799C1A2C28B8003A235C /* debug.cpp */; };
+		D97279B11A2C28B8003A235C /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D972799C1A2C28B8003A235C /* debug.cpp */; };
+		D97279B21A2C28B8003A235C /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D972799E1A2C28B8003A235C /* fft.cpp */; };
+		D97279B31A2C28B8003A235C /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D972799E1A2C28B8003A235C /* fft.cpp */; };
+		D97279B41A2C28B8003A235C /* fft_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A01A2C28B8003A235C /* fft_default.cpp */; };
+		D97279B51A2C28B8003A235C /* fft_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A01A2C28B8003A235C /* fft_default.cpp */; };
+		D97279B61A2C28B8003A235C /* fft_neon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A21A2C28B8003A235C /* fft_neon.cpp */; };
+		D97279B71A2C28B8003A235C /* fft_neon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A21A2C28B8003A235C /* fft_neon.cpp */; };
+		D97279B81A2C28B8003A235C /* fft_real.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A41A2C28B8003A235C /* fft_real.cpp */; };
+		D97279B91A2C28B8003A235C /* fft_real.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A41A2C28B8003A235C /* fft_real.cpp */; };
+		D97279BA1A2C28B8003A235C /* fft_real_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A61A2C28B8003A235C /* fft_real_default.cpp */; };
+		D97279BB1A2C28B8003A235C /* fft_real_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A61A2C28B8003A235C /* fft_real_default.cpp */; };
+		D97279BC1A2C28B8003A235C /* fft_real_neon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A81A2C28B8003A235C /* fft_real_neon.cpp */; };
+		D97279BD1A2C28B8003A235C /* fft_real_neon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97279A81A2C28B8003A235C /* fft_real_neon.cpp */; };
+		D97279C11A2C28C6003A235C /* fftn.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279BF1A2C28C6003A235C /* fftn.c */; };
+		D97279C21A2C28C6003A235C /* fftn.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279BF1A2C28C6003A235C /* fftn.c */; };
+		D97279C61A2C28D4003A235C /* pffft.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279C41A2C28D4003A235C /* pffft.c */; };
+		D97279C71A2C28D4003A235C /* pffft.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279C41A2C28D4003A235C /* pffft.c */; };
+		D97279D11A2C28E1003A235C /* DFT.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279C91A2C28E1003A235C /* DFT.c */; };
+		D97279D21A2C28E1003A235C /* DFT.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279C91A2C28E1003A235C /* DFT.c */; };
+		D97279D31A2C28E1003A235C /* DFTUndiff.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279CB1A2C28E1003A235C /* DFTUndiff.c */; };
+		D97279D41A2C28E1003A235C /* DFTUndiff.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279CB1A2C28E1003A235C /* DFTUndiff.c */; };
+		D97279D51A2C28E1003A235C /* SIMDBase.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279CD1A2C28E1003A235C /* SIMDBase.c */; };
+		D97279D61A2C28E1003A235C /* SIMDBase.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279CD1A2C28E1003A235C /* SIMDBase.c */; };
+		D97279D71A2C28E1003A235C /* SIMDBaseUndiff.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279CF1A2C28E1003A235C /* SIMDBaseUndiff.c */; };
+		D97279D81A2C28E1003A235C /* SIMDBaseUndiff.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279CF1A2C28E1003A235C /* SIMDBaseUndiff.c */; };
+		D97279DC1A2C2984003A235C /* myfft.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279DA1A2C2984003A235C /* myfft.c */; };
+		D97279DD1A2C2984003A235C /* myfft.c in Sources */ = {isa = PBXBuildFile; fileRef = D97279DA1A2C2984003A235C /* myfft.c */; };
+		D9B35EA71A2D58D10002FBF8 /* build_ios_double.sh in Resources */ = {isa = PBXBuildFile; fileRef = D9B35EA51A2D58D10002FBF8 /* build_ios_double.sh */; };
+		D9B35EA81A2D58D10002FBF8 /* build_ios_double.sh in Resources */ = {isa = PBXBuildFile; fileRef = D9B35EA51A2D58D10002FBF8 /* build_ios_double.sh */; };
+		D9B35EA91A2D58D10002FBF8 /* build_ios_float.sh in Resources */ = {isa = PBXBuildFile; fileRef = D9B35EA61A2D58D10002FBF8 /* build_ios_float.sh */; };
+		D9B35EAA1A2D58D10002FBF8 /* build_ios_float.sh in Resources */ = {isa = PBXBuildFile; fileRef = D9B35EA61A2D58D10002FBF8 /* build_ios_float.sh */; };
+		D9B35EB51A2D6CD70002FBF8 /* FFTRun.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B35EB41A2D6CD70002FBF8 /* FFTRun.m */; };
+		D9B35EB61A2D6CD70002FBF8 /* FFTRun.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B35EB41A2D6CD70002FBF8 /* FFTRun.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D9020ED31A471C50007DE22C /* libfftw3_double.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3_double.a; sourceTree = "<group>"; };
+		D9020ED41A471C50007DE22C /* libfftw3_float.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3_float.a; sourceTree = "<group>"; };
+		D94201A51A2313430099FEE3 /* TestFFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94201A91A2313430099FEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94201AA1A2313430099FEE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D94201AC1A2313430099FEE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D94201AD1A2313430099FEE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D94201AF1A2313430099FEE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D94201B01A2313430099FEE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D94201B31A2313430099FEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D94201B51A2313430099FEE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D94201B81A2313430099FEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D94201D21A23136D0099FEE3 /* TestFFTOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFFTOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94201D51A23136D0099FEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94201D61A23136D0099FEE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D94201D71A23136D0099FEE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D94201D91A23136D0099FEE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D94201DB1A23136D0099FEE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D94201DE1A23136D0099FEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D97279701A2C2621003A235C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D97279721A2C2626003A235C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		D97279761A2C26E7003A235C /* fftw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftw3.h; sourceTree = "<group>"; };
+		D972797B1A2C2755003A235C /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
+		D972797C1A2C2755003A235C /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
+		D972797D1A2C2755003A235C /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
+		D97279811A2C277D003A235C /* NE10_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NE10_fft.c; sourceTree = "<group>"; };
+		D97279821A2C277D003A235C /* NE10_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NE10_fft.h; sourceTree = "<group>"; };
+		D97279831A2C277D003A235C /* NE10_fft_float32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NE10_fft_float32.c; sourceTree = "<group>"; };
+		D97279841A2C277D003A235C /* NE10_fft_float32.neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NE10_fft_float32.neon.c; sourceTree = "<group>"; };
+		D97279851A2C277D003A235C /* NE10_fft_float32.neon.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = NE10_fft_float32.neon.s; sourceTree = "<group>"; };
+		D97279861A2C277D003A235C /* NE10_fft_float32.neonintrinsic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NE10_fft_float32.neonintrinsic.c; sourceTree = "<group>"; };
+		D97279871A2C277D003A235C /* NE10_fft_float32.neonv8.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = NE10_fft_float32.neonv8.S; sourceTree = "<group>"; };
+		D97279881A2C277D003A235C /* NE10_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NE10_macros.h; sourceTree = "<group>"; };
+		D97279891A2C277D003A235C /* NE10_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NE10_types.h; sourceTree = "<group>"; };
+		D97279981A2C28B8003A235C /* ckfft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ckfft.cpp; sourceTree = "<group>"; };
+		D97279991A2C28B8003A235C /* ckfft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ckfft.h; sourceTree = "<group>"; };
+		D972799A1A2C28B8003A235C /* context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = context.cpp; sourceTree = "<group>"; };
+		D972799B1A2C28B8003A235C /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		D972799C1A2C28B8003A235C /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debug.cpp; sourceTree = "<group>"; };
+		D972799D1A2C28B8003A235C /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		D972799E1A2C28B8003A235C /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
+		D972799F1A2C28B8003A235C /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		D97279A01A2C28B8003A235C /* fft_default.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_default.cpp; sourceTree = "<group>"; };
+		D97279A11A2C28B8003A235C /* fft_default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_default.h; sourceTree = "<group>"; };
+		D97279A21A2C28B8003A235C /* fft_neon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_neon.cpp; sourceTree = "<group>"; };
+		D97279A31A2C28B8003A235C /* fft_neon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_neon.h; sourceTree = "<group>"; };
+		D97279A41A2C28B8003A235C /* fft_real.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_real.cpp; sourceTree = "<group>"; };
+		D97279A51A2C28B8003A235C /* fft_real.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_real.h; sourceTree = "<group>"; };
+		D97279A61A2C28B8003A235C /* fft_real_default.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_real_default.cpp; sourceTree = "<group>"; };
+		D97279A71A2C28B8003A235C /* fft_real_default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_real_default.h; sourceTree = "<group>"; };
+		D97279A81A2C28B8003A235C /* fft_real_neon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_real_neon.cpp; sourceTree = "<group>"; };
+		D97279A91A2C28B8003A235C /* fft_real_neon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_real_neon.h; sourceTree = "<group>"; };
+		D97279AA1A2C28B8003A235C /* math_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math_util.h; sourceTree = "<group>"; };
+		D97279AB1A2C28B8003A235C /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		D97279BF1A2C28C6003A235C /* fftn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fftn.c; sourceTree = "<group>"; };
+		D97279C01A2C28C6003A235C /* fftn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftn.h; sourceTree = "<group>"; };
+		D97279C41A2C28D4003A235C /* pffft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pffft.c; sourceTree = "<group>"; };
+		D97279C51A2C28D4003A235C /* pffft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pffft.h; sourceTree = "<group>"; };
+		D97279C91A2C28E1003A235C /* DFT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DFT.c; sourceTree = "<group>"; };
+		D97279CA1A2C28E1003A235C /* DFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFT.h; sourceTree = "<group>"; };
+		D97279CB1A2C28E1003A235C /* DFTUndiff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DFTUndiff.c; sourceTree = "<group>"; };
+		D97279CC1A2C28E1003A235C /* DFTUndiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTUndiff.h; sourceTree = "<group>"; };
+		D97279CD1A2C28E1003A235C /* SIMDBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SIMDBase.c; sourceTree = "<group>"; };
+		D97279CE1A2C28E1003A235C /* SIMDBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMDBase.h; sourceTree = "<group>"; };
+		D97279CF1A2C28E1003A235C /* SIMDBaseUndiff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SIMDBaseUndiff.c; sourceTree = "<group>"; };
+		D97279D01A2C28E1003A235C /* SIMDBaseUndiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMDBaseUndiff.h; sourceTree = "<group>"; };
+		D97279DA1A2C2984003A235C /* myfft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = myfft.c; sourceTree = "<group>"; };
+		D97279DB1A2C2984003A235C /* myfft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfft.h; sourceTree = "<group>"; };
+		D9B35EA41A2C64F70002FBF8 /* nsfft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nsfft.h; sourceTree = "<group>"; };
+		D9B35EA51A2D58D10002FBF8 /* build_ios_double.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_ios_double.sh; sourceTree = "<group>"; };
+		D9B35EA61A2D58D10002FBF8 /* build_ios_float.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_ios_float.sh; sourceTree = "<group>"; };
+		D9B35EB31A2D6CD70002FBF8 /* FFTRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTRun.h; sourceTree = "<group>"; };
+		D9B35EB41A2D6CD70002FBF8 /* FFTRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTRun.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D94201A21A2313430099FEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97279711A2C2621003A235C /* Accelerate.framework in Frameworks */,
+				D9020ED61A471C50007DE22C /* libfftw3_float.a in Frameworks */,
+				D9020ED51A471C50007DE22C /* libfftw3_double.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94201CF1A23136D0099FEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97279731A2C2626003A235C /* Accelerate.framework in Frameworks */,
+				D9020ED71A471CA3007DE22C /* libfftw3_double.a in Frameworks */,
+				D9020ED81A471CA5007DE22C /* libfftw3_float.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D942019C1A2313430099FEE3 = {
+			isa = PBXGroup;
+			children = (
+				D9B35EB21A2D60360002FBF8 /* Frameworks */,
+				D97279741A2C26B0003A235C /* Venders */,
+				D9B35EB31A2D6CD70002FBF8 /* FFTRun.h */,
+				D9B35EB41A2D6CD70002FBF8 /* FFTRun.m */,
+				D94201A71A2313430099FEE3 /* TestFFTiOS */,
+				D94201D31A23136D0099FEE3 /* TestFFTOSX */,
+				D94201A61A2313430099FEE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D94201A61A2313430099FEE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D94201A51A2313430099FEE3 /* TestFFT.app */,
+				D94201D21A23136D0099FEE3 /* TestFFTOSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D94201A71A2313430099FEE3 /* TestFFTiOS */ = {
+			isa = PBXGroup;
+			children = (
+				D94201AC1A2313430099FEE3 /* AppDelegate.h */,
+				D94201AD1A2313430099FEE3 /* AppDelegate.m */,
+				D94201AF1A2313430099FEE3 /* ViewController.h */,
+				D94201B01A2313430099FEE3 /* ViewController.m */,
+				D94201B21A2313430099FEE3 /* Main.storyboard */,
+				D94201B51A2313430099FEE3 /* Images.xcassets */,
+				D94201B71A2313430099FEE3 /* LaunchScreen.xib */,
+				D94201A81A2313430099FEE3 /* Supporting Files */,
+			);
+			name = TestFFTiOS;
+			path = TestFFT;
+			sourceTree = "<group>";
+		};
+		D94201A81A2313430099FEE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D94201A91A2313430099FEE3 /* Info.plist */,
+				D94201AA1A2313430099FEE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D94201D31A23136D0099FEE3 /* TestFFTOSX */ = {
+			isa = PBXGroup;
+			children = (
+				D94201D61A23136D0099FEE3 /* AppDelegate.h */,
+				D94201D71A23136D0099FEE3 /* AppDelegate.m */,
+				D94201DB1A23136D0099FEE3 /* Images.xcassets */,
+				D94201DD1A23136D0099FEE3 /* MainMenu.xib */,
+				D94201D41A23136D0099FEE3 /* Supporting Files */,
+			);
+			path = TestFFTOSX;
+			sourceTree = "<group>";
+		};
+		D94201D41A23136D0099FEE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D94201D51A23136D0099FEE3 /* Info.plist */,
+				D94201D91A23136D0099FEE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D97279741A2C26B0003A235C /* Venders */ = {
+			isa = PBXGroup;
+			children = (
+				D97279751A2C26E7003A235C /* fftw */,
+				D972797A1A2C2755003A235C /* kissfft */,
+				D97279801A2C277D003A235C /* ne10 */,
+				D97279971A2C28B8003A235C /* ckfft */,
+				D97279BE1A2C28C6003A235C /* pdl */,
+				D97279C31A2C28D4003A235C /* pffft */,
+				D97279C81A2C28E1003A235C /* nsfft */,
+				D97279D91A2C2984003A235C /* myfft */,
+			);
+			path = Venders;
+			sourceTree = "<group>";
+		};
+		D97279751A2C26E7003A235C /* fftw */ = {
+			isa = PBXGroup;
+			children = (
+				D97279761A2C26E7003A235C /* fftw3.h */,
+				D9020ED31A471C50007DE22C /* libfftw3_double.a */,
+				D9020ED41A471C50007DE22C /* libfftw3_float.a */,
+				D9B35EA51A2D58D10002FBF8 /* build_ios_double.sh */,
+				D9B35EA61A2D58D10002FBF8 /* build_ios_float.sh */,
+			);
+			path = fftw;
+			sourceTree = "<group>";
+		};
+		D972797A1A2C2755003A235C /* kissfft */ = {
+			isa = PBXGroup;
+			children = (
+				D972797D1A2C2755003A235C /* kiss_fft.h */,
+				D972797C1A2C2755003A235C /* kiss_fft.c */,
+				D972797B1A2C2755003A235C /* _kiss_fft_guts.h */,
+			);
+			path = kissfft;
+			sourceTree = "<group>";
+		};
+		D97279801A2C277D003A235C /* ne10 */ = {
+			isa = PBXGroup;
+			children = (
+				D97279881A2C277D003A235C /* NE10_macros.h */,
+				D97279891A2C277D003A235C /* NE10_types.h */,
+				D97279821A2C277D003A235C /* NE10_fft.h */,
+				D97279811A2C277D003A235C /* NE10_fft.c */,
+				D97279831A2C277D003A235C /* NE10_fft_float32.c */,
+				D97279861A2C277D003A235C /* NE10_fft_float32.neonintrinsic.c */,
+				D9B35EB11A2D5A3D0002FBF8 /* unused */,
+			);
+			path = ne10;
+			sourceTree = "<group>";
+		};
+		D97279971A2C28B8003A235C /* ckfft */ = {
+			isa = PBXGroup;
+			children = (
+				D97279991A2C28B8003A235C /* ckfft.h */,
+				D97279981A2C28B8003A235C /* ckfft.cpp */,
+				D972799B1A2C28B8003A235C /* context.h */,
+				D972799A1A2C28B8003A235C /* context.cpp */,
+				D972799D1A2C28B8003A235C /* debug.h */,
+				D972799C1A2C28B8003A235C /* debug.cpp */,
+				D97279AA1A2C28B8003A235C /* math_util.h */,
+				D97279AB1A2C28B8003A235C /* platform.h */,
+				D972799F1A2C28B8003A235C /* fft.h */,
+				D972799E1A2C28B8003A235C /* fft.cpp */,
+				D97279A11A2C28B8003A235C /* fft_default.h */,
+				D97279A01A2C28B8003A235C /* fft_default.cpp */,
+				D97279A21A2C28B8003A235C /* fft_neon.cpp */,
+				D97279A31A2C28B8003A235C /* fft_neon.h */,
+				D97279A51A2C28B8003A235C /* fft_real.h */,
+				D97279A41A2C28B8003A235C /* fft_real.cpp */,
+				D97279A71A2C28B8003A235C /* fft_real_default.h */,
+				D97279A61A2C28B8003A235C /* fft_real_default.cpp */,
+				D97279A91A2C28B8003A235C /* fft_real_neon.h */,
+				D97279A81A2C28B8003A235C /* fft_real_neon.cpp */,
+			);
+			path = ckfft;
+			sourceTree = "<group>";
+		};
+		D97279BE1A2C28C6003A235C /* pdl */ = {
+			isa = PBXGroup;
+			children = (
+				D97279C01A2C28C6003A235C /* fftn.h */,
+				D97279BF1A2C28C6003A235C /* fftn.c */,
+			);
+			path = pdl;
+			sourceTree = "<group>";
+		};
+		D97279C31A2C28D4003A235C /* pffft */ = {
+			isa = PBXGroup;
+			children = (
+				D97279C51A2C28D4003A235C /* pffft.h */,
+				D97279C41A2C28D4003A235C /* pffft.c */,
+			);
+			path = pffft;
+			sourceTree = "<group>";
+		};
+		D97279C81A2C28E1003A235C /* nsfft */ = {
+			isa = PBXGroup;
+			children = (
+				D9B35EA41A2C64F70002FBF8 /* nsfft.h */,
+				D97279CA1A2C28E1003A235C /* DFT.h */,
+				D97279C91A2C28E1003A235C /* DFT.c */,
+				D97279CC1A2C28E1003A235C /* DFTUndiff.h */,
+				D97279CB1A2C28E1003A235C /* DFTUndiff.c */,
+				D97279CE1A2C28E1003A235C /* SIMDBase.h */,
+				D97279CD1A2C28E1003A235C /* SIMDBase.c */,
+				D97279D01A2C28E1003A235C /* SIMDBaseUndiff.h */,
+				D97279CF1A2C28E1003A235C /* SIMDBaseUndiff.c */,
+			);
+			path = nsfft;
+			sourceTree = "<group>";
+		};
+		D97279D91A2C2984003A235C /* myfft */ = {
+			isa = PBXGroup;
+			children = (
+				D97279DB1A2C2984003A235C /* myfft.h */,
+				D97279DA1A2C2984003A235C /* myfft.c */,
+			);
+			path = myfft;
+			sourceTree = "<group>";
+		};
+		D9B35EB11A2D5A3D0002FBF8 /* unused */ = {
+			isa = PBXGroup;
+			children = (
+				D97279841A2C277D003A235C /* NE10_fft_float32.neon.c */,
+				D97279851A2C277D003A235C /* NE10_fft_float32.neon.s */,
+				D97279871A2C277D003A235C /* NE10_fft_float32.neonv8.S */,
+			);
+			name = unused;
+			sourceTree = "<group>";
+		};
+		D9B35EB21A2D60360002FBF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D97279721A2C2626003A235C /* Accelerate.framework */,
+				D97279701A2C2621003A235C /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D94201A41A2313430099FEE3 /* TestFFT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94201C81A2313430099FEE3 /* Build configuration list for PBXNativeTarget "TestFFT" */;
+			buildPhases = (
+				D94201A11A2313430099FEE3 /* Sources */,
+				D94201A21A2313430099FEE3 /* Frameworks */,
+				D94201A31A2313430099FEE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFFT;
+			productName = TestFFT;
+			productReference = D94201A51A2313430099FEE3 /* TestFFT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D94201D11A23136D0099FEE3 /* TestFFTOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94201EC1A23136D0099FEE3 /* Build configuration list for PBXNativeTarget "TestFFTOSX" */;
+			buildPhases = (
+				D94201CE1A23136D0099FEE3 /* Sources */,
+				D94201CF1A23136D0099FEE3 /* Frameworks */,
+				D94201D01A23136D0099FEE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFFTOSX;
+			productName = TestFFTOSX;
+			productReference = D94201D21A23136D0099FEE3 /* TestFFTOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D942019D1A2313430099FEE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ibireme;
+				TargetAttributes = {
+					D94201A41A2313430099FEE3 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D94201D11A23136D0099FEE3 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D94201A01A2313430099FEE3 /* Build configuration list for PBXProject "TestFFT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D942019C1A2313430099FEE3;
+			productRefGroup = D94201A61A2313430099FEE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D94201A41A2313430099FEE3 /* TestFFT */,
+				D94201D11A23136D0099FEE3 /* TestFFTOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D94201A31A2313430099FEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B35EA71A2D58D10002FBF8 /* build_ios_double.sh in Resources */,
+				D9B35EA91A2D58D10002FBF8 /* build_ios_float.sh in Resources */,
+				D94201B41A2313430099FEE3 /* Main.storyboard in Resources */,
+				D94201B91A2313430099FEE3 /* LaunchScreen.xib in Resources */,
+				D94201B61A2313430099FEE3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94201D01A23136D0099FEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94201DC1A23136D0099FEE3 /* Images.xcassets in Resources */,
+				D9B35EA81A2D58D10002FBF8 /* build_ios_double.sh in Resources */,
+				D9B35EAA1A2D58D10002FBF8 /* build_ios_float.sh in Resources */,
+				D94201DF1A23136D0099FEE3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D94201A11A2313430099FEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97279BC1A2C28B8003A235C /* fft_real_neon.cpp in Sources */,
+				D97279961A2C2818003A235C /* NE10_fft_float32.neonintrinsic.c in Sources */,
+				D972798C1A2C277D003A235C /* NE10_fft_float32.c in Sources */,
+				D97279B41A2C28B8003A235C /* fft_default.cpp in Sources */,
+				D972797E1A2C2755003A235C /* kiss_fft.c in Sources */,
+				D97279D31A2C28E1003A235C /* DFTUndiff.c in Sources */,
+				D97279B61A2C28B8003A235C /* fft_neon.cpp in Sources */,
+				D94201B11A2313430099FEE3 /* ViewController.m in Sources */,
+				D94201AE1A2313430099FEE3 /* AppDelegate.m in Sources */,
+				D97279BA1A2C28B8003A235C /* fft_real_default.cpp in Sources */,
+				D9B35EB51A2D6CD70002FBF8 /* FFTRun.m in Sources */,
+				D972798A1A2C277D003A235C /* NE10_fft.c in Sources */,
+				D97279DC1A2C2984003A235C /* myfft.c in Sources */,
+				D97279AE1A2C28B8003A235C /* context.cpp in Sources */,
+				D97279D71A2C28E1003A235C /* SIMDBaseUndiff.c in Sources */,
+				D97279B01A2C28B8003A235C /* debug.cpp in Sources */,
+				D97279AC1A2C28B8003A235C /* ckfft.cpp in Sources */,
+				D97279B21A2C28B8003A235C /* fft.cpp in Sources */,
+				D97279D11A2C28E1003A235C /* DFT.c in Sources */,
+				D97279B81A2C28B8003A235C /* fft_real.cpp in Sources */,
+				D97279D51A2C28E1003A235C /* SIMDBase.c in Sources */,
+				D97279C11A2C28C6003A235C /* fftn.c in Sources */,
+				D97279C61A2C28D4003A235C /* pffft.c in Sources */,
+				D94201AB1A2313430099FEE3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94201CE1A23136D0099FEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97279B91A2C28B8003A235C /* fft_real.cpp in Sources */,
+				D97279D81A2C28E1003A235C /* SIMDBaseUndiff.c in Sources */,
+				D97279AD1A2C28B8003A235C /* ckfft.cpp in Sources */,
+				D97279BD1A2C28B8003A235C /* fft_real_neon.cpp in Sources */,
+				D97279D61A2C28E1003A235C /* SIMDBase.c in Sources */,
+				D972797F1A2C2755003A235C /* kiss_fft.c in Sources */,
+				D97279B51A2C28B8003A235C /* fft_default.cpp in Sources */,
+				D97279C71A2C28D4003A235C /* pffft.c in Sources */,
+				D97279BB1A2C28B8003A235C /* fft_real_default.cpp in Sources */,
+				D97279B31A2C28B8003A235C /* fft.cpp in Sources */,
+				D97279C21A2C28C6003A235C /* fftn.c in Sources */,
+				D97279B11A2C28B8003A235C /* debug.cpp in Sources */,
+				D97279931A2C277D003A235C /* NE10_fft_float32.neonintrinsic.c in Sources */,
+				D972798B1A2C277D003A235C /* NE10_fft.c in Sources */,
+				D97279D41A2C28E1003A235C /* DFTUndiff.c in Sources */,
+				D97279DD1A2C2984003A235C /* myfft.c in Sources */,
+				D97279D21A2C28E1003A235C /* DFT.c in Sources */,
+				D97279AF1A2C28B8003A235C /* context.cpp in Sources */,
+				D972798D1A2C277D003A235C /* NE10_fft_float32.c in Sources */,
+				D94201DA1A23136D0099FEE3 /* main.m in Sources */,
+				D94201D81A23136D0099FEE3 /* AppDelegate.m in Sources */,
+				D9B35EB61A2D6CD70002FBF8 /* FFTRun.m in Sources */,
+				D97279B71A2C28B8003A235C /* fft_neon.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D94201B21A2313430099FEE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D94201B31A2313430099FEE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D94201B71A2313430099FEE3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D94201B81A2313430099FEE3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D94201DD1A23136D0099FEE3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D94201DE1A23136D0099FEE3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D94201C61A2313430099FEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D94201C71A2313430099FEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D94201C91A2313430099FEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_FAST_MATH = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_UNROLL_LOOPS = NO;
+				INFOPLIST_FILE = TestFFT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Venders/fftw",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		D94201CA1A2313430099FEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_FAST_MATH = NO;
+				GCC_UNROLL_LOOPS = NO;
+				INFOPLIST_FILE = TestFFT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Venders/fftw",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		D94201ED1A23136D0099FEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_UNROLL_LOOPS = NO;
+				INFOPLIST_FILE = TestFFTOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Venders/fftw",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D94201EE1A23136D0099FEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_UNROLL_LOOPS = NO;
+				INFOPLIST_FILE = TestFFTOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Venders/fftw",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D94201A01A2313430099FEE3 /* Build configuration list for PBXProject "TestFFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94201C61A2313430099FEE3 /* Debug */,
+				D94201C71A2313430099FEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94201C81A2313430099FEE3 /* Build configuration list for PBXNativeTarget "TestFFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94201C91A2313430099FEE3 /* Debug */,
+				D94201CA1A2313430099FEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94201EC1A23136D0099FEE3 /* Build configuration list for PBXNativeTarget "TestFFTOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94201ED1A23136D0099FEE3 /* Debug */,
+				D94201EE1A23136D0099FEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D942019D1A2313430099FEE3 /* Project object */;
+}
