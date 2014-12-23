@@ -1,7 +1,7 @@
 YYBenchmarkFFT
 ==============
 
-FFT Benchmark for iOS/OSX
+FFT Benchmark for iOS/OSX (single-precision complex, 1D transforms)
 
     for() {
       input();
